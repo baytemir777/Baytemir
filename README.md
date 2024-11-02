@@ -47,6 +47,6 @@ git switch: введена для простоты переключения ме
 
 
 task4:
-asdasdsad
+tefte
 
 
