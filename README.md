@@ -46,3 +46,61 @@ git switch: введена для простоты переключения ме
 Удалённые ветки: представляют ветки в удалённом репозитории, имеют префикс (например, origin/).
 
 
+Задание 1️⃣: Создать новую ветку Student_name и добавить 3 коммита.
+Создать ветку Student_name:
+bash
+git checkout -b Student_name
+Добавить 3 коммита, изменив файлы или создав новые. Используйте:
+bash
+git add
+git commit -m "Коммит 1"
+git commit -m "Коммит 2"
+git commit -m "Коммит 3"
+
+Задание 2️⃣: Объединить ветку two с веткой three и сделать ребейз three на one.
+Перейти на ветку three:
+bash
+git checkout three
+Объединить ветку two:
+bash
+git merge two
+Затем сделать ребейз:
+bash
+git rebase one
+
+Задание 3️⃣: Ответить на вопросы о коммитах.
+Я ответил на все вопросы и закоммитил в другом месте до этого
+
+Задание 4️⃣: Создать новую ветку dev-feature от ветки main и добавить хотя бы один коммит.
+Перейти на ветку main:
+bash
+git checkout main
+Создать ветку dev-feature:
+bash
+git checkout -b dev-feature
+Добавить коммит:
+bash
+git add
+git commit -m "Коммит в dev-feature"
+
+Задание 5️⃣: Решить конфликты при слиянии feature обратно в one и сделать скриншот решения конфликта.
+Перейти на ветку one:
+bash
+git checkout one
+Объединить ветку feature:
+bash
+git merge feature
+Если возникли конфликты, решить их и сделать скриншот.
+
+Задание 6️⃣: Удалить ветки two и three после их слияния с основной веткой.
+Перейти на основную ветку one:
+bash
+git checkout one
+Удалить ветки two и three:
+bash
+git branch -d two
+git branch -d three
+Сделать скриншот результата, используя команду:
+bash
+git branch
+
